@@ -213,6 +213,10 @@ a {
     font-weight: 700;
 }
 
+.loupe {
+    display: none;
+}
+
 .search:hover {
     cursor: pointer;
 }
@@ -232,6 +236,10 @@ a {
 }
 
 .filterbar-bubble-block {
+    display: flex;
+}
+
+.first-mid, .second-mid {
     display: flex;
 }
 
@@ -541,7 +549,7 @@ a {
 }
 
 /********* FOOTER *********/
-    .footer-div {
+    .footer-block {
         width: 446.67px;
         height: 163px;
         padding-left: 20px;
@@ -694,6 +702,211 @@ a {
 
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+@media (max-width: 768px) {
+    body {
+        height: 4127.52px;
+    }
+
+    header {
+        width: 100%;
+        height: 115px;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: auto;
+        width: 32.27%;
+        height: 79px;
+        border: solid 1px black;
+    }
+
+    nav {
+        border-bottom: solid 2px #F2F2F2;
+    }
+
+    nav, .button {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    main {
+        width: 100%;
+        height: 3700px;
+    }
+
+    .main-container {
+        width: 100%;
+        height: 3982.52px;
+        align-items: center;
+    }
+
+    .info-group {
+        height: 432px;
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headline {
+        width: 89.33%;
+        height: 79px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .headline-txt {
+        margin: 0px;
+        font-size: 16px;
+    }
+
+    .searchbar {
+        width: 89.33%;
+        justify-content: space-between;
+    }
+
+    .search {
+        width: 14.54%;
+        height: 49px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+
+    .search-p {
+        display: none;
+    }
+
+    .loupe {
+        display: flex;
+    }
+
+    .filterbar {
+        width: 89.33%;
+        height: 161px;
+    }
+
+    .filterbar-bubble-block {
+        flex-direction: column;
+    }
+
+    .filterbar-bubble {
+        width: 42.51%;
+        margin: 0px;
+        font-size: 14px;
+        justify-content: center;
+    }
+
+    .first-mid {
+        justify-content: space-between;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+
+    .second-mid {
+        margin: 0px;
+        justify-content: space-between;
+    }
+
+    .infobar {
+        height: 38px;
+        width: 89.33%;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 569px;
+        padding: 0px;
+    } 
+
+    .populaires-title {
+        padding-bottom: 5px;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .populaires-cards {
+        width: 89.33%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .populaires-cards .card {
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+        height: 146px;
+        margin-top: 15px;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    .hebergements {
+        width: 100%;
+        height: 1435px;
+        padding: 20px;
+        margin: auto;
+    }
+
+    .hebergements-card-txt-title {
+        padding-bottom: 15px;
+    }
+
+    .hebergements-container1, .hebergements-container2 {
+        flex-direction: column;
+    }
+
+    .hebergements-container2 {
+        display: none;
+    }
+
+    .hebergements-card {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .footer-block {
+        width: 100%;
+        background-color: #F2F2F2;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .footer-h {
+        width: 90%;
+        padding-left: 15px;
+    }
+
+    .footer-p {
+        width: 90%;
+        padding-left: 15px;
+    }
+    
 }
