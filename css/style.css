@@ -158,8 +158,6 @@ a {
    height: 49px;
    display: flex;
    text-align: center;
-   border: 1px solid var(--main-bg-color);
-   border-radius: 20px;
 }
 
 .position {
